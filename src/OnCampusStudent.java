@@ -1,3 +1,18 @@
+/**************************************************************************************************
+ * CLASS: OnCampusStudent
+ *
+ * DESCRIPTION
+ * This handles the initialization of any on campus student objects and calculates their applicable tuition rates.
+ *
+ * COURSE AND PROJECT INFORMATION:
+ * CSE205 Object-Oriented Programming and Data Structures, Spring 2022
+ * PROJECT NUMBER: 2
+ *
+ * AUTHOR: Jared Stromberg, 1207603783, Jared.Stromberg@asu.edu
+ *
+ //**************************************************************************************************/
+
+
 public class OnCampusStudent extends Student {
     public static int RESIDENT = 1;
     public static int NON_RESIDENT = 2;

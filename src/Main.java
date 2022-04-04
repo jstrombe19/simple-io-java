@@ -1,18 +1,15 @@
 /**************************************************************************************************
- CLASS: Main
-
- DESCRIPTION
- The Main class for Project 2.
-
-
-
- COURSE AND PROJECT INFORMATION:
- CSE205 Object-Oriented Programming and Data Structures, Spring 2022
-
- PROJECT NUMBER: 2
-
- AUTHOR: Jared Stromberg, 1207603783, Jared.Stromberg@asu.edu
-
+* CLASS: Main
+*
+* DESCRIPTION
+* The Main class for Project 2.
+*
+* COURSE AND PROJECT INFORMATION:
+* CSE205 Object-Oriented Programming and Data Structures, Spring 2022
+* PROJECT NUMBER: 2
+*
+* AUTHOR: Jared Stromberg, 1207603783, Jared.Stromberg@asu.edu
+*
 //**************************************************************************************************/
 
 
@@ -127,8 +124,7 @@ public class Main {
      * Return studentList
      */
     private ArrayList<Student> readFile() throws FileNotFoundException {
-//        String inputPath = "/input/p2-students.txt";
-        String inputPath = "/home/jaredstromberg/Documents/ASU/CSE205/projects/cse205-p2/test/testcase2/input/p2-students.txt";
+        String inputPath = "/input/p2-students.txt";
         ArrayList<Student> studentList = new ArrayList<>();
         Scanner input = new Scanner(new File(inputPath));
         while (input.hasNext()) {
@@ -229,8 +225,7 @@ public class Main {
      * @param pStudentList ArrayList<Student>
      */
     private void writeFile(ArrayList<Student> pStudentList) throws FileNotFoundException {
-//        PrintWriter output = new PrintWriter(new File ("/output/p2-tuition.txt"));
-        PrintWriter output = new PrintWriter("/home/jaredstromberg/Documents/ASU/CSE205/projects/cse205-p2/test/testcase2/output/p2-tuition2.txt");
+        PrintWriter output = new PrintWriter("/output/p2-tuition.txt");
         for (Student student : pStudentList) {
             output.printf("%-16s%-20s%-15s%8.2f%n", student.getId(), student.getLastName(), student.getFirstName(), student.getTuition());
         }

@@ -13,6 +13,11 @@
 // Fulton Schools of Engineering
 // Arizona State University, Tempe, AZ 85287-8809
 //**************************************************************************************************
+
+/***************************************************************************************************
+ * AUTHOR: Jared Stromberg, 1207603783, Jared.Stromberg@asu.edu
+ **************************************************************************************************/
+
 public abstract class Student implements Comparable<Student> {
 
     private String mId;

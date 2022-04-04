@@ -1,3 +1,18 @@
+/**************************************************************************************************
+ * CLASS: OnlineStudent
+ *
+ * DESCRIPTION
+ * This handles the initialization of any online student objects and calculates their applicable tuition rates.
+ *
+ * COURSE AND PROJECT INFORMATION:
+ * CSE205 Object-Oriented Programming and Data Structures, Spring 2022
+ * PROJECT NUMBER: 2
+ *
+ * AUTHOR: Jared Stromberg, 1207603783, Jared.Stromberg@asu.edu
+ *
+ //**************************************************************************************************/
+
+
 public class OnlineStudent extends Student {
     private boolean mTechFee;
 
