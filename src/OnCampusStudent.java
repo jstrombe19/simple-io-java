@@ -4,16 +4,31 @@ public class OnCampusStudent extends Student {
     private int mResident;
     private double mProgramFee;
 
+    /**
+     * Default Constructor
+     */
     OnCampusStudent() {
         this(null, null, null);
     }
 
+    /**
+     * Second Constructor - assigns an ID, first name, and last name to an online student
+     * @param pId String
+     * @param pFirstName String
+     * @param pLastName String
+     */
     OnCampusStudent(String pId, String pFirstName, String pLastName) {
         setId(pId);
         setFirstName(pFirstName);
         setLastName(pLastName);
     }
 
+    /**
+     * overridden abstract method declared in the Student class
+     * Calculates the tuition due for an on campus student as the sum of the residency-based base fee, any program fee,
+     * and the product of any credits beyond the maximum 18 included with the residency-based base fee and the associated
+     * per-credit rate
+     */
     @Override
     public void calcTuition() {
         double tuition = 0.0;
@@ -29,18 +44,34 @@ public class OnCampusStudent extends Student {
         setTuition(tuition);
     }
 
+    /**
+     * Getter to retrieve the program fee for the on campus student
+     * @return programFee double
+     */
     public double getProgramFee() {
         return mProgramFee;
     }
 
+    /**
+     * Getter to retrieve the residency status of the on campus student
+     * @return resident int
+     */
     public int getResidency() {
         return mResident;
     }
 
+    /**
+     * Setter to assign a programFee to an on campus student
+     * @param pProgramFee double
+     */
     public void setProgramFee(double pProgramFee) {
         this.mProgramFee = pProgramFee;
     }
 
+    /**
+     * Setter to assign a residency state to an on campus student
+     * @param pResident int
+     */
     public void setResidency(int pResident) {
         this.mResident = pResident;
     }

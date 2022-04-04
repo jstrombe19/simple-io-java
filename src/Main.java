@@ -99,6 +99,7 @@ public class Main {
      * Enhanced ForEach student in pStudentList Do
      *     student.calcTuition()
      * End Enhanced ForEach
+     * @param pStudentList ArrayList<Student>
      */
     private void calcTuition(ArrayList<Student> pStudentList) {
         for (Student student : pStudentList) {
@@ -161,6 +162,7 @@ public class Main {
      * Call setProgramFee(fee) on student
      * Call setCredits(credits) on student
      * Return student
+     * @param pIn Scanner
      */
     private OnCampusStudent readOnCampusStudent(Scanner pIn) {
         String id = pIn.next();
@@ -198,6 +200,7 @@ public class Main {
      * End If
      * Call setCredits(credits) on student
      * Return student
+     * @param pIn Scanner
      */
     private OnlineStudent readOnlineStudent(Scanner pIn) {
         String id = pIn.next();
@@ -223,6 +226,7 @@ public class Main {
      *     Using out.printf() output the student information per SW Requiremment 3
      * End Enhanced ForEach
      * Close the output file
+     * @param pStudentList ArrayList<Student>
      */
     private void writeFile(ArrayList<Student> pStudentList) throws FileNotFoundException {
 //        PrintWriter output = new PrintWriter(new File ("/output/p2-tuition.txt"));
